@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestNGXML">
+<!--    <test thread-count="5" name="GoogleSearch" parallel="classes">-->
+   <test name="ExcelTest">
+        <classes>
+     <!--       <class name="GoogleSearchPageTestNG" />
+             <class name="GoogleSearchPageTestNG2">
+                     <methods>
+                         <include name="googleSearchTest3"></include>
+                      </methods>
+             </class>-->
+            <class name="Utility.ExcelUtilityUsingTestNG"/>
+            </classes>
+     </test>
+ </suite>
+

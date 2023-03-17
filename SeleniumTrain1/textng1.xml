@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestNGListeners">
+<!--    <test thread-count="5" name="GoogleSearch" parallel="classes">-->
+    <!-- Added Listener to run as a Test NG Suite -->
+    <listeners>
+        <listener class-name="TestNGListeners.TestListeners"></listener>
+    </listeners>
+   <test name="Listeners">
+        <classes>
+            <class name="TestNGListeners.TestListenersDemo"/>
+            <class name="TestNGListeners.TestListenersDemo2"/>
+            </classes>
+     </test>
+ </suite>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestNGGroup">
+<!--    <test thread-count="5" name="GoogleSearch" parallel="classes">-->
+    <!-- Added Listener to run as a Test NG Suite -->
+    <test name="Groups">
+    <groups>
+        <run>
+         <!--   <include name="Smoke"></include>-->
+            <include name="AllClassTests"></include>
+            <!--      <include name="windows.*"></include>-->
+               <exclude name="windows.Smoke"></exclude>
+           </run>
+       </groups>
+
+           <classes>
+               <class name="TestNGProrityDemo.GroupingDemo"/>
+               </classes>
+        </test>
+    </suite>
+
